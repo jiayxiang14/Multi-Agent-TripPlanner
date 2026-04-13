@@ -4,10 +4,7 @@ Flight Agent —— 航班搜索 Agent。
 职责: 搜索航班、比价、推荐最优组合（价格 × 时长 × 中转次数）。
 在并行阶段执行，与 Hotel Agent / Activity Agent 同时运行。
 
-面试考点:
-  - 并行执行: 与其他两个 Agent 通过 asyncio.gather 并行，延迟降低 60%
-  - 评分函数: 多因素加权（价格占 50%, 时长 30%, 中转 20%）
-  - Mock vs 真实: 生产环境对接 Amadeus GDS API
+
 """
 
 from __future__ import annotations

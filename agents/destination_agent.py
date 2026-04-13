@@ -4,10 +4,7 @@ Destination Agent —— 目的地推荐 Agent。
 职责: 根据用户偏好推荐目的地，考虑季节、签证、安全性、性价比。
 在 Pipeline 中处于第二个节点，接收 preferences，输出 DestinationRecommendation。
 
-面试考点:
-  - 推荐算法: 基于多维加权评分（预算匹配度、季节适宜度、安全评分）
-  - 为什么不直接让用户选城市？ —— 提升用户体验，发现长尾目的地
-  - Mock 数据库 vs 真实 API: 演示用 mock，生产环境接 Amadeus / Google Places
+
 """
 
 from __future__ import annotations

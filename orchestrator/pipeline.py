@@ -8,10 +8,7 @@ Pipeline 编排器 —— 串联整个行程规划流程。
   ↓ (超预算则循环调整)
   输出最终行程
 
-面试考点:
-  - Pipeline 模式 vs DAG 模式 vs State Machine 模式的区别
-  - Pipeline 模式适合本项目的原因: 流程线性+并行分叉+循环，复杂度适中
-  - 错误传播: 前序 Agent 失败则后序不执行，错误信息记录在 state 中
+
 """
 
 from __future__ import annotations

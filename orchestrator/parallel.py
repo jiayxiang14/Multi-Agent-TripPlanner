@@ -1,7 +1,6 @@
 """
 并行执行器 —— 同时运行多个 Agent，等待全部完成后合并结果。
 
-面试考点:
   - 为什么并行？ Flight/Hotel/Activity 三个 Agent 互不依赖，串行执行浪费时间
   - asyncio.gather vs ThreadPoolExecutor: 纯 IO 密集用 asyncio，CPU 密集用线程
   - 错误处理: 某个 Agent 失败不影响其他 Agent，用 return_exceptions=True

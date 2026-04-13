@@ -8,9 +8,7 @@ Preference Agent —— 偏好收集 Agent。
   - 为什么需要单独的偏好收集 Agent？ —— 关注点分离，偏好收集逻辑可能很复杂
     （多轮对话、意图识别、默认值填充），独立 Agent 方便迭代升级。
   - Mock 模式下直接使用用户传入的结构化数据，真实模式下可接入 NLU。
-"""
 
-'''
 输入 state
    ↓
 检查 preferences 是否存在
@@ -24,7 +22,8 @@ Preference Agent —— 偏好收集 Agent。
 推进 state.state
    ↓
 返回 state
-'''
+"""
+
 
 from __future__ import annotations
 

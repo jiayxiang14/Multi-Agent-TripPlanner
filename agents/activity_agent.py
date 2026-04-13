@@ -4,10 +4,6 @@ Activity Agent —— 活动/景点推荐 Agent。
 职责: 推荐景点/餐厅/体验，生成每日行程安排。
 在并行阶段执行，与 Flight Agent / Hotel Agent 同时运行。
 
-面试考点:
-  - 每日行程的 time-slot 分配逻辑（morning / afternoon / evening）
-  - 活动与用户兴趣的匹配度
-  - 预算分配: 活动费用 ≈ 总预算的 20%-30%
 """
 
 from __future__ import annotations

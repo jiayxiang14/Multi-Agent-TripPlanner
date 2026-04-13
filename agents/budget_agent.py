@@ -4,12 +4,7 @@ Budget Agent —— 预算校验 Agent。
 职责: 实时追踪总花费，确保不超预算，超预算时生成调整建议。
 在 Pipeline 最后一个节点执行，决定是否触发调整循环。
 
-面试考点（高频!!!）:
-  - 预算循环如何避免无限循环？ → max_adjustments 限制（默认 3 轮）
-  - 渐进式降级策略: 先降活动 → 再降酒店 → 最后换航班
-  - 每轮调整的幅度: 按超预算比例动态计算
-  - 状态机转换: BUDGET_CHECKING → COMPLETED / ADJUSTING
-  - 前置不可行校验: 预算连最低门槛50%都不到时直接 FAILED，不进入无意义的调整循环
+
 """
 
 from __future__ import annotations

@@ -4,10 +4,7 @@ Hotel Agent —— 酒店搜索 Agent。
 职责: 搜索酒店，匹配用户偏好（位置/价格/评分/设施）。
 在并行阶段执行，与 Flight Agent / Activity Agent 同时运行。
 
-面试考点:
-  - 按旅行风格自动调整星级/价格范围
-  - 总花费 = 每晚价格 × 入住天数 × 房间数
-  - 降级策略: 超预算时可降低星级或选择距离稍远的酒店
+
 """
 
 from __future__ import annotations

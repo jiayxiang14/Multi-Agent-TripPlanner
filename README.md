@@ -1,4 +1,4 @@
-# Python 版本 - 多Agent智能旅游行程规划系统
+# Multi-Agent-TripPlanner
 
 > 包含完整的 6-Agent 实现、Pipeline 编排、并行执行、预算循环。
 
